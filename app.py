@@ -1,3 +1,10 @@
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+# --------------------------------------------------
+
+
+
 """
 StudyMate AI - Personalized Learning Content Creator
 Main Streamlit Application Entry Point
@@ -6,8 +13,8 @@ A generative AI system that combines Retrieval-Augmented Generation (RAG),
 Prompt Engineering, and Synthetic Data Generation to help students learn
 from their study materials.
 
-Author: [Your Name]
-Course: Generative AI - Final Project
+Author: Teja simha reddy Kanala
+Course: prompt Eng - Final Project
 """
 
 import streamlit as st
